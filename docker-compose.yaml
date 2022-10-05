@@ -1,0 +1,20 @@
+version: "3.0"
+services:
+  LittlePaimon:
+    container_name: LittlePaimon
+    #build: ./docker
+    image: treasurehighly/littlepaimon:latest
+    restart: always
+    ports:
+      - 13579:13579
+    volumes:
+      - ./resources:/app/LittlePaimon/resources #资源文件
+      - ./accounts:/app/LittlePaimon/accounts #插件、账号
+      - ./data:/app/LittlePaimon/data
+#    deploy:     #如需对容器内存占用进行限制，请删除#自行控制（CPU部分可不限制，主要还是内存问题）
+#      resources:
+#        limits:
+#          #cpus: '0.50'
+#          memory: 1200M
+    environment:
+      - TZ=Asia/Shanghai
