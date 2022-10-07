@@ -29,10 +29,8 @@ if [ -d "${WORK_DIR}/.git" ]; then
 		set -e
 		echo -e "\n ${BULE}----------------首次运行确保依赖安装完成----------------${RESET} \n"
 		poetry install
-                poetry run pip install setuptools
-                poetry run pip install wheel
                 poetry run nb plugin install nonebot-plugin-gocqhttp
-                poetry run nb plugin install nonebot_plugin_apscheduler #偶有缺失，确保安装
+                #poetry run nb plugin install nonebot_plugin_apscheduler #偶有缺失，确保安装
 		touch ~/._ok/lp.ok
 		set +e
 	fi
