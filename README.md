@@ -75,7 +75,7 @@
 
 #### 4、启动容器并验证
 
-* 在GenshinUID目录下后台启动容器  **[等待------]**  ：
+* 在Docker-LittlePaimon目录下后台启动容器  **[等待------]**  ：
 
   ```shell
   docker-compose up -d
