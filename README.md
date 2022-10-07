@@ -98,7 +98,7 @@
   docker exec -it LittlePaimon ./admin.sh
   ```
 
-#### 5、指令（需在GenshinUID目录下）
+#### 5、指令（需在Docker-LittlePaimon目录下）
 
 * 停止
 
