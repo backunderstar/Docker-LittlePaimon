@@ -11,6 +11,11 @@ services:
       - ./resources:/app/LittlePaimon/resources #资源文件
       - ./accounts:/app/LittlePaimon/accounts #插件、账号
       - ./data:/app/LittlePaimon/data
+#    environment:
+#      # nb2配置
+#      - HOST=0.0.0.0                       
+#      - SUPERUSERS=[""]                     # 超级用户，这里一般是你的大号QQ
+#      - NICKNAME=["bot"] 
 #    deploy:     #如需对容器内存占用进行限制，请删除#自行控制（CPU部分可不限制，主要还是内存问题）
 #      resources:
 #        limits:
